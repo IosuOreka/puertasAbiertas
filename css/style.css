@@ -1,0 +1,35 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+/* El código CSS es el encargado del aspecto de la página. Por curiosidad comentaremos la etiqueta body::after
+
+1. Es una etiqueta sin un punto por delante. Eso hace que se seleccionen todos los elementos con esa denominación.
+
+2. Al ser body, sólo hay uno y afecta a todo el aspecto visual de la página. En este caso ponemos una imagen. 
+
+3. La imagen le decimos la posición y que tiene que cubrir la pantalla. Con esto evitamos una visualización sin control de la misma. */
+
+body{
+    background-image: url('../img/fondo.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.pagination {
+    justify-content: center;
+}
+
+.puertas__abiertas__table__head{
+    background-color: grey;
+    opacity: 0.9;
+}
+
+.puertas__abiertas__table__body{
+    background-color: rgb(172, 171, 171);
+    opacity: 0.9;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Etiqueta head. Contiene información de la página, metadatos y información necesaria para el correcto renderizado de la información. -->
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Consulta de API con Paginación y Filtro</title>
+<!-- El favicon es lo que se utiliza en desarrollo web para poner el logo del cliente en la parte superior -->
+<link rel="shortcut icon" href="./img/favicon.jfif" type="image/x-icon">
+<!-- Proyecto con plantilla de bootstrap -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<!-- Los estilos son dados a la página desde la hoja de estilos css -->
+<link rel="stylesheet" href="./css/style.css">
+<!-- Los scripts y la funcionalidad se van a dar con javascript -->
+<script src="./js/script.js"></script>
+</head>
+<!-- Dentro del body es donde vemos la información que se va a visualizar de cara al usuario. -->
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">DATOS DE PAÍSES</h1>
+        <div class="row mt-3">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <!-- El elemento con el cual damos indicaciones al usuario sobre lo que tiene que poner es placeholder. -->
+                    <input type="text" class="form-control" id="countryFilter" placeholder="Filtrar por nombre del país">
+                </div>
+            </div>
+        </div>
+        <table class="table table-striped mt-3">
+            <thead class="puertas__abiertas__table__head">
+                <tr>
+                    <th>Código</th>
+                    <th>Nombre</th>
+                    <th>Capital</th>
+                    <th>Región</th>
+                    <th>Subregión</th>
+                </tr>
+            </thead>
+            <tbody id="dataBody"  class="puertas__abiertas__table__body">
+                <!-- Aquí se mostrarán los datos que vamos a consultar a nuestra API.-->
+            </tbody>
+        </table>
+        <nav aria-label="Page navigation example">
+            <ul class="pagination" id="pagination"></ul>
+        </nav>
+    </div>
+</body>
+</html>
